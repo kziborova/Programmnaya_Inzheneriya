@@ -13,3 +13,5 @@
 ## Результат на GitHub
 
 [CI №45044855881](https://github.com/kziborova/Programmnaya_Inzheneriya/actions/runs/45044855881) завершился со статусом success с первой попытки на коммите `3e0236a`. В журнале Test — 3 успешных теста. Сборка и загрузка [артефакта parts-unlimited-site](https://github.com/kziborova/Programmnaya_Inzheneriya/actions/runs/45044855881/artifacts/14762928985) прошли. Запуск инициирован вручную через workflow_dispatch. В журнале есть предупреждение о переходе используемых Actions с Node.js 20 на 24.
+
+В текущем main также подтверждены два успешных CI по событию push. В [запуске для b773a1e](https://github.com/kziborova/Programmnaya_Inzheneriya/actions/runs/45054313338) успешно завершились Test, Build и Upload site artifact.
