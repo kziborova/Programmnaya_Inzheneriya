@@ -12,10 +12,10 @@ def build():
         raise FileNotFoundError('site/index.html not found')
     if DEST.exists():
         shutil.rmtree(DEST)
-    shutil.copytree(SOURCE, DEST)
+    shutil.copytree(SOURCE, DEST, ignore=shutil.ignore_patterns(".DS_Store", "._*"))
     if not (DEST / 'data' / 'tutorials.json').exists():
         raise FileNotFoundError('data/tutorials.json not found')
-    print(f'Built demo site at {DEST}')
+    print('Сборка готова в dist/')
 
 if __name__ == '__main__':
     build()
