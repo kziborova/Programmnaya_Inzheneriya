@@ -1,0 +1,32 @@
+name: CD - build and private release
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Build static site
+        run: python scripts/build_site.py
+      - name: Package
+        run: cd dist && zip -qr ../parts-unlimited-site.zip .
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: parts-unlimited-release-package
+          path: parts-unlimited-site.zip
+      - name: Publish GitHub Release for version tag
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "${GITHUB_REF_NAME}" parts-unlimited-site.zip --title "Parts Unlimited ${GITHUB_REF_NAME}" --notes "Automated verified release" --verify-tag
