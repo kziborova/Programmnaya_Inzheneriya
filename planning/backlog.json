@@ -1,0 +1,191 @@
+[
+  {
+    "id": "PUL-001",
+    "title": "Обучение продуктам",
+    "labels": [
+      "epic",
+      "team:PUL-Web",
+      "priority:medium"
+    ],
+    "parent": null,
+    "acceptance": "Три сценария обучения доступны из каталога.",
+    "effort_hours": null,
+    "sprint": 1,
+    "status": "Backlog",
+    "depends_on": []
+  },
+  {
+    "id": "PUL-002",
+    "title": "Осваиваем дашборды",
+    "labels": [
+      "feature",
+      "team:PUL-Web",
+      "priority:medium"
+    ],
+    "parent": "PUL-001",
+    "acceptance": "Пользователь находит каталог, историю и форму запросов.",
+    "effort_hours": null,
+    "sprint": 1,
+    "status": "Backlog",
+    "depends_on": []
+  },
+  {
+    "id": "PUL-003",
+    "title": "Как клиент, я хочу просмотреть новые учебники",
+    "labels": [
+      "story",
+      "team:PUL-Web",
+      "priority:high",
+      "data",
+      "ux"
+    ],
+    "parent": "PUL-002",
+    "acceptance": "Каталог показывает заголовок и описание каждой записи.",
+    "effort_hours": null,
+    "sprint": 1,
+    "status": "Approved",
+    "depends_on": []
+  },
+  {
+    "id": "PUL-004",
+    "title": "Как клиент, я хочу видеть недавно просмотренные учебники",
+    "labels": [
+      "story",
+      "team:PUL-Web",
+      "priority:high",
+      "data",
+      "ux",
+      "expedite"
+    ],
+    "parent": "PUL-002",
+    "acceptance": "После повторного открытия материал один раз появляется в начале списка.",
+    "effort_hours": null,
+    "sprint": 1,
+    "status": "QA Approved",
+    "depends_on": []
+  },
+  {
+    "id": "PUL-005",
+    "title": "Как клиент, я хочу запросить новые материалы",
+    "labels": [
+      "story",
+      "team:PUL-Web",
+      "priority:medium"
+    ],
+    "parent": "PUL-002",
+    "acceptance": "Пустая тема отклоняется, заполненная сохраняется локально.",
+    "effort_hours": null,
+    "sprint": 2,
+    "status": "Backlog",
+    "depends_on": []
+  },
+  {
+    "id": "PUL-006",
+    "title": "Добавить страницу для самых последних учебников",
+    "labels": [
+      "task",
+      "team:PUL-Web",
+      "priority:high",
+      "ux"
+    ],
+    "parent": "PUL-003",
+    "acceptance": "Раздел новых учебников отображает карточки из JSON.",
+    "effort_hours": 5,
+    "sprint": 1,
+    "status": "Coding",
+    "depends_on": []
+  },
+  {
+    "id": "PUL-007",
+    "title": "Оптимизация запроса к данным для последних учебников",
+    "labels": [
+      "task",
+      "team:PUL-Web",
+      "priority:medium",
+      "data"
+    ],
+    "parent": "PUL-003",
+    "acceptance": "Один запрос загружает каталог для всех карточек.",
+    "effort_hours": 3,
+    "sprint": 1,
+    "status": "Backlog",
+    "depends_on": []
+  },
+  {
+    "id": "PUL-008",
+    "title": "Интеграция с метеорологической службой",
+    "labels": [
+      "integration",
+      "team:external-integrations",
+      "priority:low"
+    ],
+    "parent": null,
+    "acceptance": "Для тестового города контракт возвращает дату и прогноз либо признак отсутствия данных.",
+    "effort_hours": null,
+    "sprint": 2,
+    "status": "Backlog",
+    "depends_on": []
+  },
+  {
+    "id": "PUL-009",
+    "title": "Интеграция с корпоративными данными доставок",
+    "labels": [
+      "integration",
+      "team:external-integrations",
+      "priority:high"
+    ],
+    "parent": null,
+    "acceptance": "По учебному идентификатору контракт возвращает статус отправления.",
+    "effort_hours": null,
+    "sprint": 1,
+    "status": "Backlog",
+    "depends_on": []
+  },
+  {
+    "id": "PUL-010",
+    "title": "Отслеживание посылок",
+    "labels": [
+      "story",
+      "team:PUL-Web",
+      "priority:high"
+    ],
+    "parent": null,
+    "acceptance": "По тестовой посылке отображается статус из согласованного контракта доставки.",
+    "effort_hours": null,
+    "sprint": 2,
+    "status": "Backlog",
+    "depends_on": [
+      "PUL-009"
+    ]
+  },
+  {
+    "id": "PUL-011",
+    "title": "Кнопка открытия учебника сохраняет историю без показа материала",
+    "labels": [
+      "bug",
+      "team:PUL-Web",
+      "priority:medium"
+    ],
+    "parent": "PUL-003",
+    "acceptance": "После выбора открывается содержимое выбранного учебника.",
+    "effort_hours": null,
+    "sprint": 1,
+    "status": "Backlog",
+    "depends_on": []
+  },
+  {
+    "id": "PUL-012",
+    "title": "Проверять структуру записей истории из localStorage",
+    "labels": [
+      "tech-debt",
+      "team:PUL-Web",
+      "priority:low"
+    ],
+    "parent": "PUL-004",
+    "acceptance": "Записи без id или title пропускаются, корректные записи отображаются.",
+    "effort_hours": null,
+    "sprint": 3,
+    "status": "Backlog",
+    "depends_on": []
+  }
+]
