@@ -1,7 +1,5 @@
 # Программная_Инженерия
 
-![Эмблема Parts Unlimited Academy](docs/assets/academy.svg)
-
 Учебное приложение **Parts Unlimited Academy** сопровождает девять лабораторных работ.
 Демонстрационный проект для лабораторных работ по программной инженерии: GitHub Issues, Projects (Scrum/Kanban/Roadmap), GitHub Actions (CI/CD), GitHub Releases и (опционально) GitHub Pages.
 
