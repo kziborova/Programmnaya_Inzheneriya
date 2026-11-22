@@ -1,6 +1,6 @@
 # ЛБ 4.1. Проверка непрерывной интеграции
 
-**PARTIAL · 22 ноября 2026**
+**PASS · 22 ноября 2026**
 
 ## Цель и адаптация
 
@@ -12,4 +12,4 @@
 
 ## Результат на GitHub
 
-CI зарегистрирован в GitHub. Локальные тесты и сборка прошли. Для ссылки на run и серверный артефакт нужен разрешённый запуск. Владелец выбрал только настройку Actions. [Workflow](https://github.com/kziborova/Programmnaya_Inzheneriya/actions).
+[CI №45044855881](https://github.com/kziborova/Programmnaya_Inzheneriya/actions/runs/45044855881) завершился со статусом success с первой попытки на коммите `3e0236a`. В журнале Test — 3 успешных теста. Сборка и загрузка [артефакта parts-unlimited-site](https://github.com/kziborova/Programmnaya_Inzheneriya/actions/runs/45044855881/artifacts/14762928985) прошли. Запуск инициирован вручную через workflow_dispatch. В журнале есть предупреждение о переходе используемых Actions с Node.js 20 на 24.

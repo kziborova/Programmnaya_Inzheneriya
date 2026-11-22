@@ -1,6 +1,6 @@
 # ЛБ 4.0. Выбор исполнителя сборки
 
-**PARTIAL · 22 ноября 2026**
+**PASS · 22 ноября 2026**
 
 ## Цель и адаптация
 
@@ -12,4 +12,4 @@
 
 ## Результат на GitHub
 
-Настроен стандартный runner ubuntu-latest. Для подтверждения реального образа нужен журнал задания. Владелец выбрал только настройку Actions. [Workflow](https://github.com/kziborova/Programmnaya_Inzheneriya/actions).
+GitHub выделил стандартный hosted runner для [задания test-and-build](https://github.com/kziborova/Programmnaya_Inzheneriya/actions/runs/45044855881/job/137277120734). В журнале Set up job указан образ ubuntu-26.04 версии 20261116.202.1. Задание завершилось успешно за 6 секунд.
