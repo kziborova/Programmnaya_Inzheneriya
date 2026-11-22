@@ -13,3 +13,5 @@
 - [Агенты и раннеры](RUNNERS.md)
 
 Данные GitHub Issues и Projects заполняются в ходе лабораторных.
+
+[Команды и календарь](Our-team.md) · [Сводка](Dashboard.md)
