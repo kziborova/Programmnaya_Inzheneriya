@@ -25,7 +25,9 @@ test("Каталог, отдельные страницы, история и з�
       await page.getByRole("heading", { name: titles[index], exact: true }).waitFor();
       assert.equal(new URL(page.url()).searchParams.get("id"), data[index].id);
       assert.equal(await page.locator('link[rel="icon"]').getAttribute("href"), iconUrl);
-      assert.match(await page.locator("#material").innerText(), /Полный текст/);
+      assert.equal(await page.locator(".lesson section").count(), data[index].content.length);
+      await page.getByRole("heading", { name: "Вывод", exact: true }).waitFor();
+      assert.equal(await page.locator(".lesson section p").first().innerText(), data[index].content[0].text);
       await page.getByRole("link", { name: /Вернуться к каталогу/ }).click();
       await page.locator("#recent li a").first().waitFor();
       assert.equal(await page.locator("#recent li a").first().innerText(), titles[index]);
