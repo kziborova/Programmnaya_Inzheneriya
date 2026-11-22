@@ -9,9 +9,9 @@
 ```bash
 python3 -m unittest discover -s tests -v
 python3 scripts/build_site.py
-python3 -m http.server 8000 --directory dist
+python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
 ```
 
 Откройте http://localhost:8000 .
 
-Публикация проекта и настройка Projects выполняется Codex после входа пользователя в GitHub. Не добавляйте исходные PDF преподавателя в публичный репозиторий.
+[Документация](docs/Home.md) · [Отчёты лабораторных](docs/labs/)
