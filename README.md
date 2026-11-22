@@ -1,4 +1,4 @@
-# Программная_Инженерия
+# Лабораторные работы по Программной Инженерии
 
 Учебное приложение **Parts Unlimited Academy** сопровождает девять лабораторных работ.
 Демонстрационный проект для лабораторных работ по программной инженерии: GitHub Issues, Projects (Scrum/Kanban/Roadmap), GitHub Actions (CI/CD), GitHub Releases и (опционально) GitHub Pages.
