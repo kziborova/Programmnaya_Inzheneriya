@@ -26,7 +26,6 @@ function renderRecent() {
   const list = document.getElementById("recent");
   const recent = readArray(RECENT_KEY).filter(item => item && item.id && item.title);
   list.replaceChildren();
-  list.classList.toggle("empty", !recent.length);
   for (const item of recent) {
     const link = element("a", item.title);
     link.href = materialUrl(item.id);
@@ -52,22 +51,11 @@ function showCatalog(area, items) {
   for (const item of items) {
     const card = document.createElement("article");
     card.className = "card";
-    const cover = document.createElement("div");
-    cover.className = "cover";
-    cover.dataset.topic = item.id;
-    cover.setAttribute("aria-hidden", "true");
-    const diagram = document.createElement("span");
-    diagram.className = "diagram";
-    for (let n = 0; n < 3; n++) diagram.append(document.createElement("i"));
-    cover.append(diagram);
     const link = element("a", "Открыть материал");
     link.href = materialUrl(item.id);
     link.className = "open-material";
-    const body = document.createElement("div");
-    body.className = "card-body";
-    body.append(element("small", item.category + " · " + item.level),
-      element("h3", item.title), element("p", item.description), link);
-    card.append(cover, body);
+    card.append(element("h3", item.title), element("small", item.level),
+      element("p", item.summary || item.description), link);
     area.append(card);
   }
 }
@@ -90,16 +78,12 @@ function showMaterial(area, items) {
     ["Автор", item.author], ["Категория", item.category],
     ["Уровень", item.level], ["Год издания", item.year]
   ]) {
-    if (value) {
-      const pair = document.createElement("div");
-      pair.append(element("dt", label), element("dd", value));
-      meta.append(pair);
-    }
+    if (value) meta.append(element("dt", label), element("dd", value));
   }
   if (meta.childElementCount) area.append(meta);
   if (item.description) area.append(element("p", item.description));
   const article = document.createElement("article");
-  article.className = "lesson panel";
+  article.className = "lesson";
   article.append(element("h2", "Учебный материал"));
   if (Array.isArray(item.content)) {
     for (const part of item.content) {
