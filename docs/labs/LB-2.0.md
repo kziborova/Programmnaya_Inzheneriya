@@ -1,6 +1,6 @@
 # ЛБ 2.0. Подготовка тестовых данных
 
-**PARTIAL · 22 ноября 2026**
+**PASS · 22 ноября 2026**
 
 ## Цель и адаптация
 
@@ -10,6 +10,6 @@
 
 [Набор карточек](../../planning/backlog.json) и [каталог](../../site/data/tutorials.json). Три теста unittest прошли, сборка создала dist.
 
-## Для завершения
+## Результат на GitHub
 
-Создать Issues, сопоставить идентификаторы PUL с номерами GitHub и добавить карточки в Project.
+Созданы и сверены [12 Issues](https://github.com/kziborova/Programmnaya_Inzheneriya/issues), включая [эпик](https://github.com/kziborova/Programmnaya_Inzheneriya/issues/1), [дефект](https://github.com/kziborova/Programmnaya_Inzheneriya/issues/11) и [технический долг](https://github.com/kziborova/Programmnaya_Inzheneriya/issues/12). Проверены названия, метки и родители. Каждая карточка содержит критерий приёмки.

@@ -1,6 +1,6 @@
 # ЛБ 1.2. Ведение Wiki в Git
 
-**PARTIAL · 22 ноября 2026**
+**PASS · 22 ноября 2026**
 
 ## Цель и адаптация
 
@@ -10,6 +10,6 @@
 
 [Домашняя](../Home.md) → [Начало работы](../Getting-Started.md) → [Окружение](../Environment.md). История правок доступна через `git log -p -- docs`.
 
-## Публикация
+## Результат на GitHub
 
-Репозиторий создан с отключённой отдельной Wiki. Навигация и история редакций доступны в [docs на GitHub](https://github.com/kziborova/Programmnaya_Inzheneriya/tree/main/docs).
+[Wiki в репозитории](https://github.com/kziborova/Programmnaya_Inzheneriya/tree/main/docs) доступна в основной ветке; API вернул [домашнюю страницу](https://github.com/kziborova/Programmnaya_Inzheneriya/blob/main/docs/Home.md). Используется согласованный вариант docs/. История правок хранится в [Git](https://github.com/kziborova/Programmnaya_Inzheneriya/commits/main/docs/). Отдельная Wiki в настройках выключена.

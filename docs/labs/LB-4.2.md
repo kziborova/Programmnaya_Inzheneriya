@@ -10,6 +10,6 @@
 
 [CD](../../.github/workflows/release.yml) и [условие Pages](../../.github/workflows/pages.yml). Локальный ZIP прошёл проверку CRC и состава: index.html, assets/app.js, assets/style.css, data/tutorials.json.
 
-## Для завершения
+## Результат на GitHub
 
-Статус серверного CD — BLOCKED. После зелёного CI и согласия на приватный релиз создать тег на проверенном коммите и сверить скачанный asset.
+CD зарегистрирован в GitHub. Проверен локальный ZIP. Владелец разрешил приватный релиз после успешного CI. Тег и Release ожидают запуска. Владелец выбрал только настройку Actions. [Workflow](https://github.com/kziborova/Programmnaya_Inzheneriya/actions).

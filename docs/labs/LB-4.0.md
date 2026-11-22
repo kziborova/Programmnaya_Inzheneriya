@@ -10,6 +10,6 @@
 
 [Конфигурация runner](../RUNNERS.md) и [задание test-and-build](../../.github/workflows/ci.yml).
 
-## Для завершения
+## Результат на GitHub
 
-Получить журнал Set up job и сведения об образе реального runner.
+Настроен стандартный runner ubuntu-latest. Для подтверждения реального образа нужен журнал задания. Владелец выбрал только настройку Actions. [Workflow](https://github.com/kziborova/Programmnaya_Inzheneriya/actions).

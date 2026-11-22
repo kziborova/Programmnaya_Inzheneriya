@@ -12,6 +12,6 @@
 - [План поставки](Delivery-Plan.md)
 - [Агенты и раннеры](RUNNERS.md)
 
-Данные GitHub Issues и Projects заполняются в ходе лабораторных.
+[Задачи](https://github.com/kziborova/Programmnaya_Inzheneriya/issues) · [Kanban](https://github.com/users/kziborova/projects/2/views/2) · [Roadmap](https://github.com/users/kziborova/projects/2/views/3) · [Отчёты](labs/).
 
 [Команды и календарь](Our-team.md) · [Сводка](Dashboard.md)

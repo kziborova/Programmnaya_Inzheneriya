@@ -1,6 +1,6 @@
 # ЛБ 2.2. Управление потоком Kanban
 
-**PARTIAL · 22 ноября 2026**
+**PASS · 22 ноября 2026**
 
 ## Цель и адаптация
 
@@ -10,6 +10,6 @@
 
 [Политика WIP](../WIP_POLICY.md), [Definition of Done](../Definition-of-Done.md), [расчёт показателей](../Dashboard.md).
 
-## Для завершения
+## Результат на GitHub
 
-Создать доску и поля, выполнить переходы и проверить показатели по данным GitHub.
+[Kanban](https://github.com/users/kziborova/projects/2/views/2) группирует карточки по Status. Для проверки WIP временно перенесена задача №6 из Coding в QA Approved: в очереди стало две карточки. После возврата №6 в Coding осталась одна. История №4 находится в [ускоренной дорожке](https://github.com/users/kziborova/projects/2/views/5). [Сводка](../Dashboard.md) составлена по 12 реальным карточкам.

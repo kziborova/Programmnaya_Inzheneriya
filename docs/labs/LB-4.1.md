@@ -10,6 +10,6 @@
 
 Локально прошли 3/3 теста unittest и проверка синтаксиса JS. Главная страница, JavaScript, CSS и JSON вернули HTTP 200 при проверке через loopback. [CI](../../.github/workflows/ci.yml), [скрипт сборки](../../scripts/build_site.py).
 
-## Для завершения
+## Результат на GitHub
 
-Статус серверного CI — BLOCKED до входа и push. Проверить успешный run на содержательном коммите и получить ссылку на артефакт.
+CI зарегистрирован в GitHub. Локальные тесты и сборка прошли. Для ссылки на run и серверный артефакт нужен разрешённый запуск. Владелец выбрал только настройку Actions. [Workflow](https://github.com/kziborova/Programmnaya_Inzheneriya/actions).
