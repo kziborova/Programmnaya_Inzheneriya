@@ -1,0 +1,17 @@
+# Итоги девяти лабораторных на 22 ноября 2026
+
+9 PASS из 9 по требованиям, адаптированным для GitHub.
+
+| ЛБ | Статус | Результат |
+|---|---|---|
+| [1.1](LB-1.1.md) | PASS | Проверены репозиторий, профиль, эмблема и Wiki. Приглашения необязательны. |
+| [1.2](LB-1.2.md) | PASS | Wiki в docs и история правок опубликованы в main. |
+| [2.0](LB-2.0.md) | PASS | Созданы и проверены 12 Issues и демонстрационные данные. |
+| [2.1](LB-2.1.md) | PASS | Проверены три спринта, нативная иерархия, оценки и назначения. |
+| [2.2](LB-2.2.md) | PASS | Проверены Kanban, поля, сводка и восстановление WIP с 2 до 1. |
+| [3](LB-3.md) | PASS | Проверены Roadmap, веха, перенос дат и зависимость. |
+| [4.0](LB-4.0.md) | PASS | Подтверждён runner ubuntu-26.04. |
+| [4.1](LB-4.1.md) | PASS | Один успешный CI, три теста и артефакт. |
+| [4.2](LB-4.2.md) | PASS | По тегу v1.0.1 автоматически опубликован приватный релиз. ZIP проверен. |
+
+[Репозиторий](https://github.com/kziborova/Programmnaya_Inzheneriya) · [Project](https://github.com/users/kziborova/projects/2) · [Автоматический выпуск](https://github.com/kziborova/Programmnaya_Inzheneriya/releases/tag/v1.0.1) · [Журнал CD](https://github.com/kziborova/Programmnaya_Inzheneriya/actions/runs/45045456259).
