@@ -1,15 +1,14 @@
-# ЛБ 1.2. Ведение Wiki в Git
+# ЛБ 1.2. Создание и редактирование GitHub Wiki
 
-**PASS · 22 ноября 2026**
+23 ноября 2026 года в публичном репозитории включена [GitHub Wiki](https://github.com/kziborova/Programmnaya_Inzheneriya/wiki). Папка [docs](../Home.md) хранит исходные материалы.
 
-## Цель и адаптация
+## Ход работы
 
-Ведение Wiki в Git. Домашняя страница ведёт к началу работы, окружению, командам и календарю. Порядок месяцев задан ссылками. Страницы редактируются и версионируются в основном репозитории.
+1. Домашняя страница создана и сохранена через веб-редактор GitHub.
+2. В отдельный Git-репозиторий Wiki добавлены страницы [начала работы](https://github.com/kziborova/Programmnaya_Inzheneriya/wiki/Начало-работы), [окружения разработки](https://github.com/kziborova/Programmnaya_Inzheneriya/wiki/Окружение-разработки), [команды](https://github.com/kziborova/Programmnaya_Inzheneriya/wiki/Команда), [января](https://github.com/kziborova/Programmnaya_Inzheneriya/wiki/Январь) и [февраля](https://github.com/kziborova/Programmnaya_Inzheneriya/wiki/Февраль).
+3. Боковая панель задаёт порядок переходов. На странице команды события расположены по месяцам. Переходы доступны из браузера без авторизации.
+4. Главная страница отредактирована через Git. В [истории страницы](https://github.com/kziborova/Programmnaya_Inzheneriya/wiki/Home/_history) доступны первоначальное создание, добавление навигации и уточнение ссылок для публичного просмотра.
 
-## Проверка
+## Результат
 
-[Домашняя](../Home.md) → [Начало работы](../Getting-Started.md) → [Окружение](../Environment.md). История правок доступна через `git log -p -- docs`.
-
-## Результат на GitHub
-
-[Wiki в репозитории](https://github.com/kziborova/Programmnaya_Inzheneriya/tree/main/docs) доступна в основной ветке; API вернул [домашнюю страницу](https://github.com/kziborova/Programmnaya_Inzheneriya/blob/main/docs/Home.md). Используется согласованный вариант docs/. История правок хранится в [Git](https://github.com/kziborova/Programmnaya_Inzheneriya/commits/main/docs/). Отдельная Wiki в настройках выключена.
+В настройках репозитория проверены включённые флажки Wikis и Restrict editing to collaborators only. Читать страницы может любой посетитель, редактировать — участники с правом записи.
